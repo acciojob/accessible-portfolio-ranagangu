@@ -1,16 +1,43 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <title>Accessible Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Link to external CSS -->
+  <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
+
+  <!-- Heading with ARIA role -->
+  <h1 role="heading">Debpriya Ganguly's Portfolio</h1>
+
+  <!-- Navigation with ARIA role -->
+  <nav role="navigation">
+    <ul role="list">
+      <li role="listitem"><a href="#about">About</a></li>
+      <li role="listitem"><a href="#projects">Projects</a></li>
+      <li role="listitem"><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Profile image with ARIA role -->
+  <img role="img" src="profile.jpg" alt="Portrait of Debpriya" width="200">
+
+  <!-- Brief description -->
+  <section id="about">
+    <p>Hello! I’m Debpriya Ganguly, a front-end web developer passionate about building accessible and user-friendly interfaces.</p>
+  </section>
+
+  <!-- List of skills with ARIA roles -->
+  <section id="projects">
+    <h2>Key Skills</h2>
+    <ul role="list">
+      <li role="listitem">HTML, CSS, JavaScript</li>
+      <li role="listitem">React & Angular</li>
+      <li role="listitem">Accessibility & ARIA</li>
+    </ul>
+  </section>
 
 </body>
-
 </html>
